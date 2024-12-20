@@ -83,6 +83,4 @@ jobs:
           # В параметре tags задаётся название и тег для образа.
           # Для каждого пересобранного образа 
           # устанавливаем тег latest, чтобы потом
-          tags: sentinel/taski_backend:latest
-      - name: List files
-        run: ls -la
+          tags: sentinelx10/taski_backend:latest
