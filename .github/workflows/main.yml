@@ -83,4 +83,4 @@ jobs:
           # В параметре tags задаётся название и тег для образа.
           # Для каждого пересобранного образа 
           # устанавливаем тег latest, чтобы потом
-          tags: ваш-логин-на-docker-hub/taski_backend:latest 
+          tags: ${{ secrets.DOCKER_LOGIN }}/taski_backend:latest 
