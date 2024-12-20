@@ -74,7 +74,6 @@ jobs:
         # Одновременный билд и пуш образа в Docker Hub
         uses: docker/build-push-action@v4
         with:
-          username: ${{ secrets.DOCKER_LOGIN }}
           # Параметр context: ./backend/ указывает, что нужный Dockerfile 
           # находится в ./backend/
           context: ./backend/
@@ -84,4 +83,4 @@ jobs:
           # В параметре tags задаётся название и тег для образа.
           # Для каждого пересобранного образа 
           # устанавливаем тег latest, чтобы потом
-          tags: username/taski_backend:latest 
+          tags: sentinel/taski_backend:latest 
