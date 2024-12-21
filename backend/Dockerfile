@@ -2,14 +2,14 @@
 FROM python:3.9-slim
 
 # Set environment variables
-ENV PYTHONDONTWRITEBYTECODE 1
-ENV PYTHONUNBUFFERED 1
+ENV PYTHONDONTWRITEBYTECODE=1
+ENV PYTHONUNBUFFERED=1
 
 # Set the working directory in the container
 WORKDIR /app
 
 # Copy the requirements file into the container
-COPY ./backend/requirements.txt /app/requirements.txt
+COPY ./requirements.txt /app/requirements.txt
 
 # Install dependencies
 RUN pip install --upgrade pip
